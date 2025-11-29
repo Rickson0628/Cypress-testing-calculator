@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 
 export default function Calculator() {
@@ -15,7 +16,7 @@ export default function Calculator() {
         setDisplay("Error");
       }
     } else if (value === "E") {
-      setDisplay(display + "E"); // Add scientific notation
+      setDisplay(display + "E"); // Added E 
     } else {
       // Append number/operator to display
       setDisplay(display === "0" ? value : display + value);
